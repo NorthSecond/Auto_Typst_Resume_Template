@@ -2,7 +2,7 @@ name: Build and Commit PDF
 on: [push]
 
 jobs:
-    build and commit PDF:
+    build:
         name: Build PDF
         runs-on: ubuntu-latest
         permissions:
