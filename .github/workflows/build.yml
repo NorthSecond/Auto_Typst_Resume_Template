@@ -21,7 +21,7 @@ jobs:
           with:
             commit_message: 'Update resume PDF'
             commit_options: '--no-verify --signoff'
-            branch: 'master'
+            branch: 'main'
             file_pattern: '*.pdf'
             repository: .
             
