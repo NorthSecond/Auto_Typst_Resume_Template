@@ -1,4 +1,4 @@
-name: Build & Commit the resume PDF
+name: Build and Commit PDF
 on: [push]
 
 jobs:
