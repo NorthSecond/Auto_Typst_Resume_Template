@@ -62,7 +62,7 @@
 
 #resume_section("发表论文")
 
-- [CVPR Best paper]*Gupta*, Tanmay, and Aniruddha Kembhavi. "Visual programming: Compositional visual reasoning without training." Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2023.
+- [XXXX]*You*, #lorem(5), and #lorem(5). "#lorem(20)" Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2023.
 
 #resume_section([项目经历])
 
