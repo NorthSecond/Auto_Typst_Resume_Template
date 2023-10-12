@@ -16,6 +16,8 @@
 
 对于本地没有安装 Typst 的使用者，可以通过 Github Actions 实现自动部署。在每一次提交后，Github Actions 会自动运行 Typst 并将生成的 PDF Commit 到根目录中。
 
+> Give the default GITHUB_TOKEN write permission to commit and push the changed files back to the repository.
+
 ## 使用方式
 
 1. Fork 本项目

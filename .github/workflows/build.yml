@@ -2,9 +2,11 @@ name: Build & Commit the resume PDF
 on: [push]
 
 jobs:
-    build:
+    build & commit the resume PDF:
         name: Build PDF
         runs-on: ubuntu-latest
+        permissions:
+            contents: write
         steps:
         - name: Checkout master
           uses: actions/checkout@v3
