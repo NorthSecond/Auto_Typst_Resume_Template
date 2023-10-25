@@ -40,6 +40,10 @@
 
 项目配置了自动部署的 Github Actions，可以在每次提交后自动运行 Typst （执行的命令是 `make all`）并将生成的 PDF Commit 到根目录中。
 
+### Typst Web
+
+我制作了一个 typst.app 上的在线项目，[链接](https://typst.app/project/r4XMUB3ENQUH7zWiuK7_tO)。但是由于字体不太好上传，所以暂时还不是特别推荐。
+
 ## TBD
 
 - [ ] 英文版示例与字体

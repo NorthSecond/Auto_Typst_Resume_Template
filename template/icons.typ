@@ -16,3 +16,4 @@
 #let fa_github = icon(fa_path + "github.svg");
 #let fa_linkedin = icon(fa_path + "linkedin.svg");
 #let fa_phone = icon(fa_path + "phone-alt.svg");
+#let fa_weixin = icon(fa_path + "weixin.svg");
