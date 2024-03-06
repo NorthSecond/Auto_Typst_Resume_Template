@@ -22,8 +22,9 @@
 
 ## 使用方式
 
-1. Fork 本项目
-2. 修改 `src` 文件夹下的文件，
+1. Fork 本项目；
+2. （可选）在 `Github Actions` 控制界面打开本仓库的 Github Action 功能；
+3. 修改 `src` 文件夹下的文件为你的简历内容。
 
 ### 本地编译
 
@@ -38,7 +39,7 @@
 
 ### Github Actions
 
-项目配置了自动部署的 Github Actions，可以在每次提交后自动运行 Typst （执行的命令是 `make all`）并将生成的 PDF Commit 到根目录中。
+项目配置了自动部署的 Github Actions，可以在每次提交后自动运行 Typst （执行的命令是 `make all`）并将生成的 PDF Commit 到根目录中（对于 Fork 的子仓库，可能需要手动打开 Github Action 功能）。
 
 ### Typst Web
 
