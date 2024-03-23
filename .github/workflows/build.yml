@@ -9,21 +9,32 @@ jobs:
             contents: write
         steps:
         - name: Checkout master
-          uses: actions/checkout@v3
+          uses: actions/checkout@v4
           with:  
             fetch-depth: 0
-        - uses: yusancky/setup-typst@v2
+        - uses: typst-community/setup-typst@v3
           id: setup-typst
-          with:
-            version: 'v0.7.0'
         - name: Build PDF
           run: 'make all'
-        - name: Git Auto Commit
-          uses: stefanzweifel/git-auto-commit-action@v5.0.0
+        # - name: Git Auto Commit
+        #   uses: stefanzweifel/git-auto-commit-action@v5.0.0
+        #   with:
+        #     commit_message: 'Update resume PDF'
+        #     commit_options: '--no-verify --signoff'
+        #     branch: 'main'
+        #     file_pattern: '*.pdf'
+        #     repository: .
+        - uses: actions/upload-artifact@v4
           with:
-            commit_message: 'Update resume PDF'
-            commit_options: '--no-verify --signoff'
-            branch: 'main'
-            file_pattern: '*.pdf'
-            repository: .
+            name: resume-pdf
+            path: |
+              个人简历.pdf
+              Resume.pdf
+        - name: Release
+          uses: softprops/action-gh-release@v1
+          if: startsWith(github.ref, 'refs/tags/')
+          with:
+            files: |
+              个人简历.pdf
+              Resume.pdf
             

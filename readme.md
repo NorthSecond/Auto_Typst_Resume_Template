@@ -16,9 +16,7 @@
 
 ### Github Actions
 
-对于本地没有安装 Typst 的使用者，可以通过 Github Actions 实现自动部署。在每一次提交后，Github Actions 会自动运行 Typst 并将生成的 PDF Commit 到根目录中。
-
-> Give the default GITHUB_TOKEN write permission to commit and push the changed files back to the repository.
+对于本地没有安装 Typst 的使用者，可以通过 Github Actions 实现自动部署。在每一次提交后，Github Actions 会自动运行 Typst 并将生成的 PDF 文件打包提供下载。
 
 ## 使用方式
 
@@ -39,7 +37,11 @@
 
 ### Github Actions
 
-项目配置了自动部署的 Github Actions，可以在每次提交后自动运行 Typst （执行的命令是 `make all`）并将生成的 PDF Commit 到根目录中（对于 Fork 的子仓库，可能需要手动打开 Github Action 功能）。
+项目配置了自动部署的 Github Actions，可以在每次提交后自动运行 Typst （执行的命令是 `make all`）并将生成的 PDF 文件打包提供下载。可以在 `Actions` 标签页查看运行结果，并在对应运行时的 `Summary` 页面的 `Artifacts` 中下载生成的 PDF 文件压缩包。
+
+### Github Release
+
+项目配置了 Github Release，对于正式版本的发布，使用 `git tag` 功能打上版本号标签，Github Actions 会自动将生成的 PDF 文件发布到 Github Release 页面。
 
 ### Typst Web
 
@@ -47,6 +49,5 @@
 
 ## TBD
 
-- [ ] 英文版示例与字体
+- [x] 英文版示例与字体
 - [ ] 证件照插入的解决方案
-
