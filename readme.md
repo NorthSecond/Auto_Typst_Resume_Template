@@ -24,6 +24,15 @@
 
 ## 使用方式
 
+### Typst Web（推荐）
+
+我制作了一个 [typst.app](https://typst.app) 上的在线项目，[链接](https://typst.app/project/r4XMUB3ENQUH7zWiuK7_tO)。可以复制该项目到自己的账号中进行使用，即可完成在线编辑和即时预览。
+
+> [!NOTE]  
+> Typst Web 客户端封装了 Noto Sans 的支持，所以和仓库不同的一个小点是我们使用谷歌提供的思源宋体 Noto Serif 作为中文模板的字体（内容和Adobe思源宋体一致，名字不一样而已）。
+
+### 使用本仓库
+
 1. 在仓库的右上角点击 "Use this template" 按钮，选择新建一个您的仓库；
 2. （可选）在 `Github Actions` 控制界面打开本仓库的 Github Action 功能；
 3. 修改 `src` 文件夹下的文件为你的简历内容。
@@ -51,9 +60,6 @@
 
 > 请注意，使用 `git tag` 功能时，需要在本地使用 `git push --tags` 命令将标签推送到远程仓库。
 
-### Typst Web
-
-我制作了一个 typst.app 上的在线项目，[链接](https://typst.app/project/r4XMUB3ENQUH7zWiuK7_tO)。但是由于字体不太好上传，所以暂时还不是特别推荐。
 
 ## TBD
 
