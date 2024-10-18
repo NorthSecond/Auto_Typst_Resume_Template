@@ -16,16 +16,8 @@ jobs:
           run: sudo apt-get install -y fonts-noto-cjk fonts-noto-cjk-extra
         - uses: typst-community/setup-typst@v3
           id: setup-typst
+        - name: Build PDF
           run: make all
-        # - name: Build PDF
-        # - name: Git Auto Commit
-        #   uses: stefanzweifel/git-auto-commit-action@v5.0.0
-        #   with:
-        #     commit_message: 'Update resume PDF'
-        #     commit_options: '--no-verify --signoff'
-        #     branch: 'main'
-        #     file_pattern: '*.pdf'
-        #     repository: .
         - uses: actions/upload-artifact@v4
           with:
             name: resume-pdf
