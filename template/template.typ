@@ -7,7 +7,7 @@
     )
     set text(
         size: 11pt,
-        font:("Source Han Serif SC")
+        font:("Centaur", "Noto Serif CJK SC"),
     )
     show link: text
     set par(

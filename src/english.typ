@@ -3,14 +3,8 @@
 #import "../template/template.typ": *;
 #show: template;
 
-#set text(
-    size: 12pt,
-    font: "Centaur"
-)
-
 #init(
     name: "San Zhang",
-    pic_path : "",
 )
 
 #info(
