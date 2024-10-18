@@ -10,9 +10,9 @@
 
 ### 字体
 
-中文简历使用的是 **思源宋体**，字体文件在 `fonts` 文件夹下，使用时并不需要进行安装；英文简历模板使用 Centaur 字体。
+中文简历使用的是 **思源宋体** 的谷歌版本，对于在线使用的用户来说，并不需呀特殊安装，对于本地使用的用户，可以参照下一节中的内容进行字体的安装；英文部分使用 Centaur 字体。
 
-### 证件照支持（暂无）
+### <del>证件照支持</del>（暂无）
 
 > 目前没有解决插入证件照之后的一些小小的设计问题，所以暂时不支持插入证件照，如果将 `init` 函数中的 `pic_path` 设为非空值可能会出现一些小问题。
 
@@ -26,18 +26,25 @@
 
 ### Typst Web（推荐）
 
-我制作了一个 [typst.app](https://typst.app) 上的在线项目，[链接](https://typst.app/project/r4XMUB3ENQUH7zWiuK7_tO)。可以复制该项目到自己的账号中进行使用，即可完成在线编辑和即时预览。
+我制作了一个 [typst.app](https://typst.app) 上的在线项目，[链接在此](https://typst.app/project/r4XMUB3ENQUH7zWiuK7_tO)。可以复制该项目到自己的账号中进行使用，即可完成在线编辑和即时预览。
 
-> [!NOTE]  
-> Typst Web 客户端封装了 Noto Sans 的支持，所以和仓库不同的一个小点是我们使用谷歌提供的思源宋体 Noto Serif 作为中文模板的字体（内容和Adobe思源宋体一致，名字不一样而已）。
-
-### 使用本仓库
+## Github 仓库
 
 1. 在仓库的右上角点击 "Use this template" 按钮，选择新建一个您的仓库；
 2. （可选）在 `Github Actions` 控制界面打开本仓库的 Github Action 功能；
 3. 修改 `src` 文件夹下的文件为你的简历内容。
 
 ### 本地编译
+
+#### 字体安装
+
+对于本地没有安装谷歌版思源宋体 （`Noto Serif CJK SC`）的用户，需要下载改字体才能正常编译中文版简历，可选只在本仓库使用或者全局安装。下载链接：[Noto Serif CJK SC](https://fonts.google.com/noto/specimen/Noto+Serif+SC)，对于访问谷歌受限的用户，可以在国内镜像站如 [清华大学镜像](https://mirrors.tuna.tsinghua.edu.cn/github-release/googlefonts/noto-cjk/Noto%20Serif%20CJK%20Version%202.002%20(OTF,%20OTC,%20Super%20OTC,%20Subset%20OTF,%20Variable%20OTF_TTF)/09_NotoSerifCJKsc.zip) 下载。
+
+对于只在本项目中使用该字体的用户，可以将字体文件放在项目根目录下，`Makefile` 中已经制定了编译的字体路径。
+
+对于全局安装的用户，Windows 用户可以右键字体文件选择 “安装” 或者 “为所有用户安装”。 Linux 用户可以检查自己的发行版包管理器是否有 `fonts-noto-cjk` 或者 `fonts-noto-cjk-extra` 这两个包，如果有的话可以直接安装。安装后请使用 `fc-cache -fv` 命令刷新字体缓存。
+
+#### 编译
 
 在有 Typst 和 GNU Make 的本地环境中，可以通过 Typst 命令行工具进行编译。
 
