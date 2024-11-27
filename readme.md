@@ -1,8 +1,8 @@
-# Typst 中文简历模板
+# Typst 中英双语简历模板
 
 ## 介绍
 
-一个借助 Github Actions 实现自动部署的 Typst 简历模板。效果如下（也可参考 Release 页面中的 PDF 文件）:
+一个可借助 Github Actions 实现自动部署的 Typst 中文/英文简历模板。效果如下（也可参考 Release 页面中的 PDF 文件）:
 
 |  [中文示例](https://github.com/NorthSecond/Auto_Typst_Resume_Template/releases/download/Release-template-1.0.0/default.pdf) |  [英文示例](https://github.com/NorthSecond/Auto_Typst_Resume_Template/releases/download/Release-template-1.0.0/Resume.pdf)| 
 |:---:|:---:|
