@@ -4,9 +4,9 @@
 
 #init(
     name: "张三",
-    // 插入图片功能尚未支持
-    // pic_path: "/img/avatar.jpg",
-    pic_path : "",
+    // 如不需要头像，可注释掉上面的 pic_path 行，或者将其置空
+    pic_path: "/img/avatar.jpg",
+    // pic_path : "",
 )
 
 #info(
@@ -15,11 +15,6 @@
         icon: "/img/fa/fa-home.svg",
         link: "https://zhangsan.io/",
         content: "https://zhangsan.io/"
-    ),
-    (
-        icon: fa_github,
-        link: "https://github.com/NorthSecond",
-        content: "NorthSecond"
     ),
     (
         icon: fa_email,
@@ -32,6 +27,15 @@
         content: "+86 133 3333 3333",
     ),
 )
+// // 如果info太长，可以多次调用info实现分行
+// #info(
+//     color: rgb(0, 0, 0),
+//     (
+//         icon: fa_github,
+//         link: "https://github.com/xxxxxx",
+//         content: "xxxxxx"
+//     ),
+// )
 
 #resume_section("教育经历")
 

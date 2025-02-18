@@ -27,32 +27,19 @@
     set align (
         center,
     )
-    if pic_path == ""{
-        text(
+    text(
             style: "normal",
             weight: "extrabold",
             size: 20pt,
         )[#name]
-    }
-    else {
+    if pic_path != ""{
     // insert picture
-        table(
-            columns: (83%, 17%),
-            rows: 1em,
-            align: 
-            (x, y) => {
-                (center, right).at(x);
-            },
-            stroke: none,
-            text(
-            style: "normal",
-            weight: "extrabold",
-            size: 22pt,
-            )[#name],
+        place(
+            top + right,
+            dy: -2em,
             image(
                 pic_path,
-                width: 2.5cm,
-                height: 3.33cm,
+                height: 33mm,
             )
         )
     }

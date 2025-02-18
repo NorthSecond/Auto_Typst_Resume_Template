@@ -2,25 +2,20 @@
 
 ## 介绍
 
-一个可借助 Github Actions 实现自动部署的 Typst 中文/英文简历模板。效果如下（也可参考 Release 页面中的 PDF 文件）:
+一个可借助 Github Actions 或 Typst 官网实现自动编译的 Typst 中文/英文双语简历模板（**无需本地环境**）。效果如下（也可参考 Release 页面中的 PDF 文件）:
 
-|  [中文示例](https://github.com/NorthSecond/Auto_Typst_Resume_Template/releases/download/Release-template-1.0.0/default.pdf) |  [英文示例](https://github.com/NorthSecond/Auto_Typst_Resume_Template/releases/download/Release-template-1.0.0/Resume.pdf)| 
+|  [中文示例](https://github.com/NorthSecond/Auto_Typst_Resume_Template/releases/download/Release-template-2.1.0/default.pdf) |  [英文示例](https://github.com/NorthSecond/Auto_Typst_Resume_Template/releases/download/Release-template-2.1.0/Resume.pdf)| 
 |:---:|:---:|
-| ![](https://github.com/NorthSecond/Auto_Typst_Resume_Template/blob/main/docs/Chinese.png?raw=true) | ![](https://github.com/NorthSecond/Auto_Typst_Resume_Template/blob/main/docs/English.png?raw=true)| 
+| ![](/docs/Chinese.png?raw=true) | ![](/docs/English.png?raw=true)| 
 
 ### 字体
 
 中文简历使用的是 **思源宋体** 的谷歌版本，对于在线使用的用户来说，并不需要进行安装操作，对于本地使用的用户，可以参照下一节中的内容进行字体的安装；英文部分使用 Centaur 字体。
 
-### <del>证件照支持</del>（暂无）
+### 证件照支持
 
-> 目前没有解决插入证件照之后的一些小小的设计问题，所以暂时不支持插入证件照，如果将 `init` 函数中的 `pic_path` 设为非空值可能会出现一些小问题。
+在编写建立时可选择是否插入证件照。在编写简历的过程中，如果不需要插入证件照，将 `pic_path` 参数设置为空即可。如果需要插入证件照，将 `pic_path` 参数设置为证件照的路径即可。
 
-目前主要遇见的问题是 Typst 的元素没有找到一个像 LaTeX 一样浮动在页面之上指定位置的方法，因此如果插入图片的话可能会导致姓名不能居中等问题，目前在想办法使用指定size溢出的方式来解决这个问题。
-
-### Github Actions
-
-对于本地没有安装 Typst 的使用者，可以通过 Github Actions 实现自动部署。在每一次提交后，Github Actions 会自动运行 Typst 并将生成的 PDF 文件打包提供下载。
 
 ## 使用方式
 
@@ -71,4 +66,8 @@
 ## TBD
 
 - [x] 英文版示例与字体
-- [ ] 证件照插入的解决方案
+- [x] 证件照插入的解决方案
+
+---
+
+本项目在 v2.1.0 后使用 [CC BY-NC 4.0 协议](https://creativecommons.org/licenses/by-nc/4.0/deed.zh-hans)开源，请在遵守协议的前提下自由使用，但不得用于商业用途。
