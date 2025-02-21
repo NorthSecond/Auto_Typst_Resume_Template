@@ -7,7 +7,7 @@
     )
     set text(
         size: 11pt,
-        font:("Centaur", "Noto Serif CJK SC"),
+        font:("Noto Serif CJK SC"),
     )
     show link: text
     set par(
@@ -17,23 +17,23 @@
 }
 
 #let init(
-    name:lorem(3),
+    name: lorem(3),
     pic_path: "",
 ) = {
     set document(
-      title: name + "'s Resume",
-      author: name,
+        title: name + "'s Resume",
+        author: name,
     )
-    set align (
+    set align(
         center,
     )
     text(
-            style: "normal",
-            weight: "extrabold",
-            size: 20pt,
-        )[#name]
-    if pic_path != ""{
-    // insert picture
+        style: "normal",
+        weight: "extrabold",
+        size: 20pt,
+    )[#name]
+    if pic_path != "" {
+        // insert picture
         place(
             top + right,
             dy: -2em,
