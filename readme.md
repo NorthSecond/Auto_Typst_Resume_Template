@@ -4,7 +4,7 @@
 
 一个可借助 Github Actions 或 Typst 官网实现自动编译的 Typst 中文/英文双语简历模板（**无需本地环境**）。效果如下（也可参考 Release 页面中的 PDF 文件）:
 
-|  [中文示例](https://github.com/NorthSecond/Auto_Typst_Resume_Template/releases/download/Release-template-2.1.0/default.pdf) |  [英文示例](https://github.com/NorthSecond/Auto_Typst_Resume_Template/releases/download/Release-template-2.1.0/Resume.pdf)| 
+|  [中文示例](https://github.com/NorthSecond/Auto_Typst_Resume_Template/releases/download/v2.1.0/default.pdf) |  [英文示例](https://github.com/NorthSecond/Auto_Typst_Resume_Template/releases/download/v2.1.0/Resume.pdf)| 
 |:---:|:---:|
 | ![](/docs/Chinese.png?raw=true) | ![](/docs/English.png?raw=true)| 
 
