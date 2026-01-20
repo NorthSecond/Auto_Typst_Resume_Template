@@ -63,7 +63,7 @@
             height: 1em,
             {
             if "icon" in dir {
-                if (type(dir.icon) == "string") {
+                if (type(dir.icon) == str) {
                     icon(dir.icon)
                 } else {
                     dir.icon
